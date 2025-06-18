@@ -1,8 +1,8 @@
 {
     "layer": "top",
     "modules-left": ["hyprland/workspaces", "hyprland/submap"],
-    "modules-center": ["hyprland/window"],
-    "modules-right": ["backlight", "memory", "cpu", "battery", "clock"],
+    "modules-center": ["clock"],
+    "modules-right": ["backlight", "memory", "cpu", "battery"],
     "hyperland/window": {
         "max-length": 50
     },
@@ -20,7 +20,7 @@
     },
     "backlight": {
         "device": "intel_backlight",
-        "format": "{percent}% {icon}",
+        "format": "{icon} {percent}%",
         "format-icons": ["󰹐", "󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩓", "󱩓", "󱩓", "󰛨"]
     },
     "memory": {

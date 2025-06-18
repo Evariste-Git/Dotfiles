@@ -27,9 +27,17 @@ window#waybar {
 }
 
 /*
+*   clock
+*/
+#clock {
+    margin:3px;
+}
+
+
+/*
 *   Info
 */
-#backlight, #battery, #cpu, #memory, #clock {
+#backlight, #battery, #cpu, #memory {
     margin:3px;
     padding:1px 8px 1px 2px;
     border: 2px solid @lavender;
