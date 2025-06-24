@@ -4,7 +4,7 @@
 *   General
 */
 * {
-    font-family: FontAwesome;
+    font-family: Jetbrains Mono Nerd Font;
 }
 
 /*
@@ -36,11 +36,34 @@ window#waybar {
 
 /*
 *   Info
+*
+*   first the general apperance is defined, afterwards the individual settings
 */
 #backlight, #battery, #cpu, #memory {
-    margin:3px;
-    padding:1px 8px 1px 2px;
-    border: 2px solid @lavender;
-    border-radius: 7px;
+    background-color: @surface0;
+}
+
+#backlight {
+    padding-right: 5px;
+    padding-left: 8px; /* +3px to adjust rounding */
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+#battery {
+    padding-right: 8px; /* +3px to adjust rounding */
+    padding-left: 5px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+#cpu {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#memory {
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
