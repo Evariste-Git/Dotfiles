@@ -1,4 +1,4 @@
-@import "macchiato.css";
+@import "mocha.css";
 
 /*
 *   General
@@ -12,7 +12,7 @@
 *   Bar
 */
 window#waybar {
-    background-color: @crust;
+    background-color: @base;
     color: @lavender;
 }
 
@@ -41,23 +41,30 @@ window#waybar {
 *   first the general apperance is defined, afterwards the individual settings
 */
 #backlight, #battery, #cpu, #memory {
-    background-color: @surface0;
+    background-color: @crust;
+    border: @lavender solid 2px;
+    border-radius: 5px;
+    padding: 3px;
+    margin:3px;
 }
 
+/*
 #backlight {
     padding-right: 5px;
-    padding-left: 8px; /* +3px to adjust rounding */
-    border-top-left-radius: 12px;
+    padding-left: 8px; *//* +3px to adjust rounding */
+/*    border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 }
-
+*/
 #battery {
+    margin-right: 6px;
     padding-right: 8px; /* +3px to adjust rounding */
-    padding-left: 5px;
+/*    padding-left: 5px;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
+*/
 }
-
+/*
 #cpu {
     padding-right: 5px;
     padding-left: 5px;
@@ -67,4 +74,4 @@ window#waybar {
     padding-right: 5px;
     padding-left: 5px;
 }
-
+*/
