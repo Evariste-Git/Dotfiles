@@ -40,7 +40,7 @@ window#waybar {
 *
 *   first the general apperance is defined, afterwards the individual settings
 */
-#backlight, #battery, #cpu, #memory {
+#pulseaudio, #backlight, #battery, #cpu, #memory {
     background-color: @crust;
     border: @lavender solid 2px;
     border-radius: 5px;
@@ -48,6 +48,9 @@ window#waybar {
     margin:3px;
 }
 
+#pulseaudio {
+    /*padding-right: 8px;*/
+}
 /*
 #backlight {
     padding-right: 5px;

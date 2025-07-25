@@ -3,15 +3,21 @@
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
         "color": {
-            "1": "blue",
+            "1": "blue", // blue = terminal blue, not blue blue; so blue is catppuccin blue
             "2": "blue"
+            // for whatever reason the Arch logo has two colors, so we have to set both to blue
+            // 1: upper color; 2: lower color
         },
         "padding": {
             "top": 2
+            // add space ontop of the Arch logo
         }
     },
     "display": {
-        "separator": "      ",
+        "separator": "    ",
+        "color": {
+            "keys": "blue"
+        },
         "constants": [
             "─────────────────"
         ],
@@ -20,104 +26,126 @@
             "paddingLeft": 2
         }
     },
+
+    // see '$ fastfetch -h MODULE_NAME-format' for more infos about the formatting of the module
+    // to test single module-formats try '$ fastfetch --structure MODULE_NAME --MODULE_NAME-format <String>'
     "modules": [
         {
             "type": "custom",
-            "format": "┌───{$1} Evariste {$1}────┐",
+            "format": "┌─────{$1} Evariste {$1}───────┐", // off by 1 to match other
             "outputColor": "#b7bdf8" // catppuccin macchiato lavender
         },
         {
             "type": "title",
             "keyIcon": "",
             "key": "User      ",
-            "keyColor": "blue",
             "format": "{user-name}"
         },
         {
-            "type": "host",
-            "key": "Machine   ",
-            "keyColor": "blue",
-            "format": "{family}"
-            // {3} - {family}: product family
-            // see '$ fastfetch -h host-format' for more infos
-        },
-        {
-            "type": "custom",
-            "format": "└{$1}─────────────────{$1}┘"
-        },
-        {
-            "type": "custom",
-            "format": "├{$1} Software Information {$1}┤",
-            "color": "red"
-        },
-        {
-            "type": "os",
-            "keyIcon": "󰣇", // Just get your distro's logo off nerdfonts.com
-            "keyColor": "blue"
-        },
-        {
-            "type": "kernel",
-            "keyIcon": "",
-            "keyColor": "blue"
-        },
-    {
-            "type": "de",
-            "key": "├─",
-            "keyColor": "blue"
-        },
-        {
-            "type": "wm",
-            "key": "├─",
-            "keyColor": "blue"
-        },
-     {
-            "type": "shell",
-            "key": "╭─",
-            "keyColor": "blue"
-        },
-        {
-            "type": "terminal",
-            "key": "├─",
-            "keyColor": "blue"
-        },
-        {
-            "type": "packages",
-            "key": "├─󰏖",
-            "keyColor": "blue"
+            "type": "uptime",
+            "key": "Uptime    ",
         },
         {
             "type": "custom",
             "format": "└{$1}──────────────────────{$1}┘"
         },
+
+        // Software Section
+
         {
-            "type": "colors",
-            "paddingLeft": 2,
-            "symbol": "circle"
+            "type": "custom",
+            "format": "┌{$1} Software Information {$1}┐"
         },
-        "os",
-        "kernel",
-        "uptime",
-        "packages",
-        "shell",
-        "display",
-        "de",
-        "wm",
-        "wmtheme",
-        "theme",
-        "icons",
-        "font",
-        "cursor",
-        "terminal",
-        "terminalfont",
-        "cpu",
-        "gpu",
-        "memory",
-        "swap",
-        "disk",
-        "localip",
-        "battery",
-        "poweradapter",
-        "locale",
+        {
+            "type": "os",
+            "keyIcon": "󰣇",
+            "key": "OS        ",
+            "format": "{build-id} {pretty-name} {arch}"
+            // {3} - {pretty-name}: pretty name of the OS
+            // {11} - {build-id}: build id of the OS or "rolling"
+            // {12} - {arch}: architecture of the OS
+        },
+        {
+            "type": "kernel",
+            "keyIcon": "",
+            "key": "Kernel    ",
+            "format": "{sysname} {release} {arch}"
+            // {1} - {release}: pretty name of the OS
+            // {2} - {build-id}: build id of the OS or "rolling"
+            // {4} - {arch}: architecture of the OS
+        },
+        {
+            "type": "packages",
+            "key": "Packages  ",
+            "format": "Pacman: {pacman}"
+            // {2} - {pacman}: number of packages installed with pacman
+        },
+        {
+            "type": "wm",
+            "key": "WM        ",
+            "format": "{pretty-name} {version}"
+            // {2} - {pretty-name}: pretty name of the WM
+            // {5} - {version}: version of the WM
+        },
+        {
+            "type": "shell",
+            "key": "Shell     ",
+            "format": "{pretty-name} {version}"
+            // {6} - {pretty-name}: pretty name of the WM
+            // {4} - {version}: version of the WM
+
+        },
+        {
+            "type": "terminal",
+            "key": "Terminal  ",
+            "format": "{pretty-name} {version}"
+            // {5} - {pretty-name}: pretty name of the WM
+            // {6} - {version}: version of the WM
+        },
+        // "terminalfont",
+        // "cursor",
+        {
+            "type": "custom",
+            "format": "├{$1} Hardware Information {$1}┤",
+            "color": "red"
+        },
+        {
+            "type": "host",
+            "key": "Machine   ",
+            "format": "{family}"
+            // {3} - {family}: product family
+        },
+        {
+            "type": "cpu",
+            "key": "CPU       ",
+            "format": "{name} ({cores-physical}/{cores-logical} @ {freq-max})" // TODO: too long
+            // {1} - {name}: name of the CPU
+            // {3}/{4} - {cores-physical}/{cores-logical}: core count
+            // {7} - {freq-max}: maximal frequency
+        },
+        {
+            "type": "gpu",
+            "key": "GPU       ",
+            "format": "{name} ({type})"
+            // {2} - {name}: name of the GPU
+            // {6} - {type}: type of the GPU, i.e. "INTEGRATED"
+        },
+        {
+            "type": "disk",
+            "key": "Disk      ",
+        },
+        {
+            "type": "memory",
+            "key": "Memory    ",
+        },
+        {
+            "type": "display",
+            "keyColor": "red"
+        },
+        {
+            "type": "custom",
+            "format": "└{$1}──────────────────────{$1}┘"
+        },
         "break",
         "colors"
     ]
