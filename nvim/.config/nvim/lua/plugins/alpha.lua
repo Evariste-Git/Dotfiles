@@ -1,23 +1,23 @@
 return {
-	"goolord/alpha-nvim",
-	config = function()
-		require("alpha").setup(require("alpha.themes.dashboard").config)
-		local alpha = require("alpha")
-		local dashboard = require("alpha.themes.dashboard")
+    "goolord/alpha-nvim",
+    config = function()
+        require("alpha").setup(require("alpha.themes.dashboard").config)
+        local alpha = require("alpha")
+        local dashboard = require("alpha.themes.dashboard")
 
-		dashboard.section.header.val = {
-[[                                                             ]],
-[[                                                             ]],
-[[███████╗██╗   ██╗ █████╗ ██████╗ ██╗███████╗████████╗███████╗]],
-[[██╔════╝██║   ██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝██╔════╝]],
-[[█████╗  ██║   ██║███████║██████╔╝██║███████╗   ██║   █████╗  ]],
-[[██╔══╝  ╚██╗ ██╔╝██╔══██║██╔══██╗██║╚════██║   ██║   ██╔══╝  ]],
-[[███████╗ ╚████╔╝ ██║  ██║██║  ██║██║███████║   ██║   ███████╗]],
-[[╚══════╝  ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝   ╚═╝   ╚══════╝]],
-[[                                                             ]],
-[[                                                             ]],
+        dashboard.section.header.val = {
+            [[                                                             ]],
+            [[                                                             ]],
+            [[███████╗██╗   ██╗ █████╗ ██████╗ ██╗███████╗████████╗███████╗]],
+            [[██╔════╝██║   ██║██╔══██╗██╔══██╗██║██╔════╝╚══██╔══╝██╔════╝]],
+            [[█████╗  ██║   ██║███████║██████╔╝██║███████╗   ██║   █████╗  ]],
+            [[██╔══╝  ╚██╗ ██╔╝██╔══██║██╔══██╗██║╚════██║   ██║   ██╔══╝  ]],
+            [[███████╗ ╚████╔╝ ██║  ██║██║  ██║██║███████║   ██║   ███████╗]],
+            [[╚══════╝  ╚═══╝  ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝   ╚═╝   ╚══════╝]],
+            [[                                                             ]],
+            [[                                                             ]],
         }
 
-		alpha.setup(dashboard.opts)
-	end,
+        alpha.setup(dashboard.opts)
+    end,
 }
