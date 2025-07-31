@@ -5,6 +5,7 @@ return {
 	config = function()
 		require("catppuccin").setup({
 			flavour = "macchiato",
+            auto_integrations = true,
 		})
 
 		-- apply catppuccin
