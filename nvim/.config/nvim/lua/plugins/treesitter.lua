@@ -2,17 +2,16 @@
 
 return {
     "nvim-treesitter/nvim-treesitter",
-    branch = 'master',
+    branch = "master",
     -- nvim-treesitter does not support lazy loading
     lazy = false,
     build = ":TSUpdate",
     config = function()
         local config = require("nvim-treesitter.configs")
         config.setup({
-            ensure_installed = {"c", "css", "just", "lua", "rust"},
+            ensure_installed = { "c", "css", "just", "lua", "rust" },
             highlight = { enable = true },
-            indent = {enable = true },
+            indent = { enable = true },
         })
-    end
+    end,
 }
-
