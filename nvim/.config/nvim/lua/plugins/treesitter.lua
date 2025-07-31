@@ -9,6 +9,8 @@ return {
     config = function()
         local config = require("nvim-treesitter.configs")
         config.setup({
+            -- parsers that are ensured to be installed
+            -- a list of names or "all"
             ensure_installed = { "c", "css", "just", "lua", "rust" },
             highlight = { enable = true },
             indent = { enable = true },
