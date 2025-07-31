@@ -8,13 +8,15 @@ return {
 
     lazy = false,
 
-    config = function()
-        require("catppuccin").setup({
-            flavour = "macchiato",
+    opts = {
+        flavour = "macchiato",
 
-            -- enable automatic integration of other neovim plugins
-            auto_integrations = true,
-        })
+        -- enable automatic integration of other neovim plugins
+        auto_integrations = true,
+    },
+
+    config = function(_, opts)
+        require("catppuccin").setup(opts)
 
         -- apply catppuccin
         vim.cmd.colorscheme("catppuccin")
