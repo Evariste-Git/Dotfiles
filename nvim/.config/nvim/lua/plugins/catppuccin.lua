@@ -1,6 +1,7 @@
 return {
     "catppuccin/nvim",
     name = "catppuchin",
+    -- set catppuchin to the highest loading priority
     priority = 1000,
     config = function()
         require("catppuccin").setup({
