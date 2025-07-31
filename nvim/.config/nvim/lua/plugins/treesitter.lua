@@ -13,7 +13,7 @@ return {
             -- a list of names or "all"
             ensure_installed = { "c", "css", "just", "lua", "rust" },
             highlight = { enable = true },
-            indent = { enable = true },
+            indent = { enable = true, additional_vim_regex_highlighting = false },
         })
     end,
 }
