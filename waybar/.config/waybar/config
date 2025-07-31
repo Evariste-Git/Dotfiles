@@ -55,7 +55,8 @@
     },
     "battery": {
         "format": "{icon} {capacity}%",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""],
+        "format-charging": "{icon}󱐋 {capacity}%"
     },
     "clock": {
         "format-alt": "{:%a, %d. %b  %H:%M}",
