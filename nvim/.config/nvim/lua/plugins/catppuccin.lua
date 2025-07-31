@@ -5,6 +5,7 @@ return {
 	config = function()
 		require("catppuccin").setup({
 			flavour = "macchiato",
+            -- enable automatic integration of other neovim plugins
             auto_integrations = true,
 		})
 
