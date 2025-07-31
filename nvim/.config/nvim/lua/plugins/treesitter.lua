@@ -1,3 +1,5 @@
+-- regulary run :TSUpdate to update all the parsers
+
 return {
     "nvim-treesitter/nvim-treesitter",
     branch = 'master',
