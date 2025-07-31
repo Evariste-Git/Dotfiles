@@ -9,7 +9,7 @@ return {
     config = function()
         local config = require("nvim-treesitter.configs")
         config.setup({
-            ensure_installed = {"c", "css", "lua", "rust"},
+            ensure_installed = {"c", "css", "just", "lua", "rust"},
             highlight = { enable = true },
             indent = {enable = true },
         })
