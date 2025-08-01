@@ -6,6 +6,7 @@ return {
     -- set catppuchin to the highest loading priority
     priority = 1000,
 
+    -- catppuchin does not support lazy-loading
     lazy = false,
 
     opts = {
