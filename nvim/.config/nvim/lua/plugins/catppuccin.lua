@@ -20,6 +20,9 @@ return {
         --    dark = "mocha",
         --},
 
+        -- show '~' after the end of buffer
+        show_end_of_buffer = false,
+
         -- disable setting the background color
         transparent_background = true,
 
