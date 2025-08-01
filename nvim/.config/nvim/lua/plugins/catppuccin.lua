@@ -34,6 +34,9 @@ return {
         --    percentage = 0.90,
         --},
 
+        -- TODO: set things to use italic or bold
+        -- and basically everything from now on
+
         -- disable setting the background color
         transparent_background = true,
 
