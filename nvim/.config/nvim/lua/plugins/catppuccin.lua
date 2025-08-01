@@ -26,6 +26,14 @@ return {
         -- overwride colors of neovim-terminal
         term_colors = false,
 
+        -- TODO: does not work
+        -- dim background color of inactive window
+        --dim_inactive = {
+        --    enabled = true,
+        --    shade = "dark",
+        --    percentage = 0.90,
+        --},
+
         -- disable setting the background color
         transparent_background = true,
 
