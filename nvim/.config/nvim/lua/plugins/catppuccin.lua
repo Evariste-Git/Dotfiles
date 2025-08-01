@@ -11,6 +11,9 @@ return {
     opts = {
         flavour = "macchiato",
 
+        -- disable setting the background color
+        transparent_background = true,
+
         -- enable automatic integration of other neovim plugins
         auto_integrations = true,
     },
