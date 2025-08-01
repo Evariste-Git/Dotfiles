@@ -23,6 +23,9 @@ return {
         -- show '~' after the end of buffer
         show_end_of_buffer = false,
 
+        -- overwride colors of neovim-terminal
+        term_colors = false,
+
         -- disable setting the background color
         transparent_background = true,
 
