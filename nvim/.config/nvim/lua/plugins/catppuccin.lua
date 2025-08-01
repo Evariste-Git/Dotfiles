@@ -10,7 +10,15 @@ return {
     lazy = false,
 
     opts = {
+        -- set the flavour of catppuchin to use
+        -- latte, frappe, macchiato, mocha or auto
         flavour = "macchiato",
+        -- if flavour is set to auto
+        -- pick color according to system settings (vim.o.background)
+        --background = {
+        --    light = "latte",
+        --    dark = "mocha",
+        --},
 
         -- disable setting the background color
         transparent_background = true,
