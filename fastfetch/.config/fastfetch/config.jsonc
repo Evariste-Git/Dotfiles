@@ -106,8 +106,7 @@
         // "cursor",
         {
             "type": "custom",
-            "format": "├{$1} Hardware Information {$1}┤",
-            "color": "red"
+            "format": "├{$1} Hardware Information {$1}┤"
         },
         {
             "type": "host",
@@ -132,11 +131,11 @@
         },
         {
             "type": "disk",
-            "key": "Disk      ",
+            "key": "Disk      "
         },
         {
             "type": "memory",
-            "key": "Memory    ",
+            "key": "Memory    "
         },
         {
             "type": "display",
