@@ -139,7 +139,13 @@
         },
         {
             "type": "display",
-            "keyColor": "red"
+            "key": "Display   ",
+            "format": "{1}x{2} @ {3}Hz in {12}\""
+        },
+        {
+            "type": "display",
+            "key": "  ",
+            "format": "(scaled to {4}x{5}) [{7}]"
         },
         {
             "type": "custom",
