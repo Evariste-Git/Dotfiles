@@ -11,7 +11,7 @@ return {
         config.setup({
             -- parsers that are ensured to be installed
             -- a list of names or "all"
-            ensure_installed = { "c", "css", "just", "lua", "rust" },
+            ensure_installed = { "c", "css", "just", "latex", "lua", "rust" },
             highlight = {
                 enable = true,
                 additional_vim_regex_highlighting = false,
