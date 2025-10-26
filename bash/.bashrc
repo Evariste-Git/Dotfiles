@@ -9,7 +9,15 @@ eval "$(starship init bash)"
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias np='cd ~/Documents/uds/ConcurrentProgramming/np-ss25-project-7055284-7056979/'
+
+# unn is git alias for status
+alias unn='git unn'
+
+alias vorkurs='cd ~/Documents/uds/Vorkurs/materials/'
+alias vorkurs-pdf='cd ~/Documents/uds/Vorkurs/materials/out/pdf/'
+
+alias comp='cd ~/Documents/uds/CompilerConstruction/regexfe'
+
 PS1='[\u@\h \W]\$ '
 
 # start fastfetch on startup
