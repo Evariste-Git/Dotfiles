@@ -18,4 +18,4 @@ alias commit='git commit'
 PS1='[\u@\h \W]\$ '
 
 # start fastfetch on startup
-fastfetch
+# fastfetch
