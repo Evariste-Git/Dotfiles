@@ -11,11 +11,11 @@
         "format-window-separator": " ",
         "window-rewrite-default": "",
         "window-rewrite": {
-            "title<.*youtube.*>": "", // Windows whose titles contain "youtube"
+//            "title<.*youtube.*>": "", // Windows whose titles contain "youtube"
             "class<firefox>": "", // Windows whose classes are "firefox"
-            "class<firefox> title<.*github.*>": "", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
-            "nvim": "",
-            "~*": "",
+//            "class<firefox> title<.*github.*>": "", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
+            "title<nvim>": "",
+//            "~*": "",
         },
     },
     "backlight": {
