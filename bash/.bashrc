@@ -19,9 +19,9 @@ alias ls='ls --almost-all --color=auto'
 alias grep='grep --color=auto'
 
 # unn is also git alias for status
-alias unn='git status'
-alias diff='git diff'
-alias commit='git commit'
+alias gunn='git status'
+alias gdiff='git diff'
+alias gcommit='git commit'
 
 PS1='[\u@\h \W]\$ '
 
