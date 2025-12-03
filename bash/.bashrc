@@ -18,10 +18,11 @@ fi
 alias ls='ls --almost-all --color=auto'
 alias grep='grep --color=auto'
 
+alias lg='lazygit'
 # unn is also git alias for status
-alias gunn='git status'
-alias gdiff='git diff'
-alias gcommit='git commit'
+alias unn='git status'
+alias gd='git diff'
+alias gc='git commit'
 
 PS1='[\u@\h \W]\$ '
 
