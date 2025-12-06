@@ -92,8 +92,12 @@
         ],
         "format-charging": "{icon}󱐋 {capacity}%"
     },
+    // https://github.com/Alexays/Waybar/wiki/Module:-Clock
+    // also see here: https://fmt.dev/latest/syntax/#chrono-format-specifications
     "clock": {
+        // what is shown normally
         "format": "{:%H:%M}",
+        // what is shown while hovering
         "tooltip-format": "{:%A %d. %b. %Y}"
     }
 }
