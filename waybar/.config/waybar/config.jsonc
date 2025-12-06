@@ -93,7 +93,7 @@
         "format-charging": "{icon}󱐋 {capacity}%"
     },
     "clock": {
-        "format-alt": "{:%a, %d. %b  %H:%M}",
-        "tooltip": "false"
+        "format": "{:%H:%M}",
+        "tooltip-format": "{:%A %d. %b. %Y}"
     }
 }
