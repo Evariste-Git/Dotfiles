@@ -16,6 +16,11 @@ window#waybar {
     color: @lavender;
 }
 
+tooltip {
+    background-color: @base;
+    border: 2px solid @lavender;
+}
+
 /*
 *   Hyperland workspaces
 */
