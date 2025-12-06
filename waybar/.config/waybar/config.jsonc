@@ -1,8 +1,19 @@
 {
     "layer": "top",
-    "modules-left": ["hyprland/workspaces", "hyprland/submap"],
-    "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "backlight", "memory", "cpu", "battery"],
+    "modules-left": [
+        "hyprland/workspaces",
+        "hyprland/submap"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "backlight",
+        "memory",
+        "cpu",
+        "battery"
+    ],
     "hyperland/window": {
         "max-length": 50
     },
@@ -11,17 +22,29 @@
         "format-window-separator": " ",
         "window-rewrite-default": "",
         "window-rewrite": {
-//            "title<.*youtube.*>": "", // Windows whose titles contain "youtube"
+            //            "title<.*youtube.*>": "", // Windows whose titles contain "youtube"
             "class<firefox>": "", // Windows whose classes are "firefox"
-//            "class<firefox> title<.*github.*>": "", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
+            //            "class<firefox> title<.*github.*>": "", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
             "title<nvim>": "",
-//            "~*": "",
+            //            "~*": "",
         },
     },
     "backlight": {
         "device": "intel_backlight",
         "format": "{icon} {percent}%",
-        "format-icons": ["󰹐", "󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩓", "󱩓", "󱩓", "󰛨"]
+        "format-icons": [
+            "󰹐",
+            "󱩎",
+            "󱩏",
+            "󱩐",
+            "󱩑",
+            "󱩒",
+            "󱩓",
+            "󱩓",
+            "󱩓",
+            "󱩓",
+            "󰛨"
+        ]
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
@@ -37,11 +60,16 @@
             "phone-muted": "",
             "portable": "",
             "car": "",
-            "default": ["", ""]
+            "default": [
+                "",
+                ""
+            ]
         },
         "scroll-step": 1,
         "on-click": "pavucontrol",
-        "ignored-sinks": ["Easy Effects Sink"]
+        "ignored-sinks": [
+            "Easy Effects Sink"
+        ]
     },
     "memory": {
         "interval": 30,
@@ -55,7 +83,13 @@
     },
     "battery": {
         "format": "{icon} {capacity}%",
-        "format-icons": ["", "", "", "", ""],
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
         "format-charging": "{icon}󱐋 {capacity}%"
     },
     "clock": {
