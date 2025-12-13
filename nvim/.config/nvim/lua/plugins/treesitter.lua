@@ -11,7 +11,7 @@ return {
         config.setup({
             -- parsers that are ensured to be installed
             -- a list of names or "all"
-            ensure_installed = { "bibtex", "c", "cpp", "css", "json", "jsonc", "just", "latex", "lua", "rust" },
+            ensure_installed = { "bibtex", "c", "cpp", "css", "json", "jsonc", "just", "latex", "lua", "rust", "yaml" },
             highlight = {
                 enable = true,
                 additional_vim_regex_highlighting = false,
