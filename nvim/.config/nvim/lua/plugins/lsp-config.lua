@@ -1,32 +1,49 @@
 return {
-    {
-        "mason-org/mason.nvim",
-        opts = {},
-    },
-    {
-        "mason-org/mason-lspconfig.nvim",
-        config = function()
-            require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls" },
-            })
-        end,
-    },
-    {
-        "neovim/nvim-lspconfig",
-        opts = {
-            inlay_hints = { enabled = true },
-        },
-        config = function()
-            -- local cmp_nvim_lsp = require("cmp_nvim_lsp")
-            local capabilities = require("cmp_nvim_lsp").default_capabilities()
+	{
+		"mason-org/mason.nvim",
+		opts = {},
+	},
+	{
+		"mason-org/mason-lspconfig.nvim",
+		opts = {
+			ensure_installed = { "lua_ls" },
+		},
+	},
+	{
+		"neovim/nvim-lspconfig",
+		event = { "BufReadPre", "BufNewFile" },
+		config = function()
+			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-            local lspconfig = require("lspconfig")
-            lspconfig.lua_ls.setup({
-                capabilities = capabilities, -- set this up in EVERY language server!
-            })
-            vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-            vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
-            vim.keymap.set({ "n", "v" }, "<C-a>", vim.lsp.buf.code_action, {})
-        end,
-    },
+			vim.lsp.config("*", {
+				capabilities = capabilities,
+			})
+
+			vim.lsp.config("lua_ls", {
+				settings = {
+					Lua = {
+						diagnostics = {
+							globals = { "vim" },
+						},
+					},
+				},
+			})
+
+			-- enable all servers
+			local mason_lspconfig = require("mason-lspconfig")
+			for _, server in ipairs(mason_lspconfig.get_installed_servers()) do
+				vim.lsp.enable(server)
+			end
+
+			-- keymaps
+			vim.api.nvim_create_autocmd("LspAttach", {
+				callback = function(event)
+					local opts = { buffer = event.buf }
+					vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+					vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+					vim.keymap.set({ "n", "v" }, "<C-a>", vim.lsp.buf.code_action, opts)
+				end,
+			})
+		end,
+	},
 }
