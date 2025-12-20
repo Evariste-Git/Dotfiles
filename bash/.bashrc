@@ -26,5 +26,8 @@ alias gc='git commit'
 
 PS1='[\u@\h \W]\$ '
 
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
 # start fastfetch on startup
 # fastfetch
