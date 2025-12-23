@@ -1,10 +1,4 @@
-#!/bin/bash
-# Skript to reload waybar
+#!/bin/sh
+# this script only works if waybar is managed by uwsm
 
-# Quit running waybar instances
-killall waybar
-sleep 0.5
-
-# Reload waybar
-waybar -c ~/.config/waybar/config.jsonc -s ~/.config/waybar/style.css
-
+systemctl --user restart waybar.service
