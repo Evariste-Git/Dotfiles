@@ -2,7 +2,7 @@
 
 set -e
 
-SRC="$HOME/.theme/catppuccin-$1"
+SRC="$HOME/.theme/pre/catppuccin-$1"
 OUT="$HOME/.theme/current/gtk.css"
 
 {
