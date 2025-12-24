@@ -56,6 +56,7 @@ tooltip {
 #pulseaudio {
     /*padding-right: 8px;*/
 }
+
 /*
 #backlight {
     padding-right: 5px;
@@ -64,6 +65,7 @@ tooltip {
     border-bottom-left-radius: 12px;
 }
 */
+
 #battery {
     margin-right: 6px;
     padding-right: 8px; /* +3px to adjust rounding */
@@ -72,6 +74,12 @@ tooltip {
     border-bottom-right-radius: 12px;
 */
 }
+
+#battery.critical {
+    color: @red;
+    border-color: @red;
+}
+
 /*
 #cpu {
     padding-right: 5px;
