@@ -49,7 +49,7 @@ tooltip {
 */
 
 /* first the general apperance is defined, afterwards the individual settings */
-#backlight, #battery, #cpu, #memory, #pulseaudio {
+#backlight, #battery, #cpu, #custom-theme, #memory, #pulseaudio {
     background-color: @crust;
     border: 2px solid @lavender;
     border-radius: 5px;
