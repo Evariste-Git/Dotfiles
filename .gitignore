@@ -1,4 +1,6 @@
-catppuccin/
+# colors
+colors/.theme/current/
+
 bash/.bashrc.d/project_aliases.sh
 
 TODO.md
