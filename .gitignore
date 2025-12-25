@@ -1,5 +1,6 @@
 # colors
 colors/.theme/current/
+waybar/.config/waybar/current_theme.css
 
 bash/.bashrc.d/project_aliases.sh
 
