@@ -1,4 +1,8 @@
 {
+    "include": [
+        "modules/backlight.jsonc",
+        "modules/battery.jsonc"
+    ],
     "layer": "top",
     "modules-left": [
         "hyprland/workspaces",
@@ -28,23 +32,6 @@
             "title<nvim>": ""
             //            "~*": "",
         }
-    },
-    "backlight": {
-        "format-icons": [
-            "󰛩",
-            "󱩎",
-            "󱩏",
-            "󱩐",
-            "󱩑",
-            "󱩒",
-            "󱩓",
-            "󱩔",
-            "󱩕",
-            "󱩖",
-            "󰛨"
-        ],
-        // \u2002 is a four-per-em space in unicode
-        "format": "{icon}\u2002{percent}%"
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
@@ -80,26 +67,6 @@
         "interval": 10,
         "format": " {}%",
         "max-length": 10
-    },
-    "battery": {
-        "states": {
-            "critical": 10
-        },
-        "format-icons": [
-            "󰂎",
-            "󰁺",
-            "󰁻",
-            "󰁼",
-            "󰁽",
-            "󰁾",
-            "󰁿",
-            "󰂀",
-            "󰂂",
-            "󰁹"
-        ],
-        // \u2009 is a thin space in unicode
-        "format": "{icon}\u2009{capacity}%",
-        "format-charging": "󰂄\u2009{capacity}%"
     },
     // https://github.com/Alexays/Waybar/wiki/Module:-Clock
     // also see here: https://fmt.dev/latest/syntax/#chrono-format-specifications
