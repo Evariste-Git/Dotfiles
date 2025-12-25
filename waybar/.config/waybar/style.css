@@ -1,12 +1,15 @@
 @import "current_theme.css";
 
+
 /*
 *   General
 */
+
 * {
     font-family: "JetBrainsMono Nerd Font", sans-serif;
     font-weight: bold;
 }
+
 
 /*
 *   Bar
@@ -16,10 +19,12 @@ window#waybar {
     color: @lavender;
 }
 
+
 tooltip {
     background-color: @base;
     border: 2px solid @lavender;
 }
+
 
 /*
 *   Hyperland workspaces
@@ -27,25 +32,23 @@ tooltip {
 #workspaces button{
     color: @overlay0;
 }
-
 #workspaces button.visible {
     color: @lavender;
 }
 
-/*
-*   clock
-*/
+
 #clock {
     margin:3px;
 }
 
 
 /*
+*
 *   Info
 *
-*   first the general apperance is defined, afterwards the individual settings
 */
 
+/* first the general apperance is defined, afterwards the individual settings */
 #pulseaudio, #backlight, #battery, #cpu, #memory {
     background-color: @crust;
     border: @lavender solid 2px;
