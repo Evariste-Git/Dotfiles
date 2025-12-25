@@ -1,8 +1,9 @@
 {
     "custom/theme": {
         "exec": "cat ~/Dotfiles/colors/.theme/current/current",
-        "interval": 2,
+        /* in the scripts we restart waybar, so it is sufficient to only exec on (re-)startup :) */
+        "interval": "once",
         "on-click": "~/Dotfiles/waybar/.config/waybar/scripts/switch_theme.sh",
-        "tooltip": true
+        "tooltip": false
     }
 }
