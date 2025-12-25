@@ -3,7 +3,7 @@
 
 # get correct colors
 echo "copying colors"
-"$HOME/Dotfiles/waybar/.config/waybar/copy_theme.sh"
+"$HOME/Dotfiles/waybar/.config/waybar/scripts/copy_theme.sh"
 
 echo "restarting"
 systemctl --user restart waybar.service
