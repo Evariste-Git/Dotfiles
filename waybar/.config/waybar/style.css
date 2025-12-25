@@ -51,7 +51,7 @@ tooltip {
 /* first the general apperance is defined, afterwards the individual settings */
 #backlight, #battery, #cpu, #memory, #pulseaudio {
     background-color: @crust;
-    border: @lavender solid 2px;
+    border: 2px solid @lavender;
     border-radius: 5px;
     /* to adjust rounding 3px left and right, and no padding top bottom */
     padding: 0px 3px;
@@ -65,10 +65,10 @@ tooltip {
 #battery.critical {
     color: @red;
     border-color: @red;
-    background: @red_10;
+    background-color: @red_10;
 }
 #battery.charging {
     color: @green;
     border-color: @green;
-    background: @green_10;
+    background-color: @green_10;
 }
