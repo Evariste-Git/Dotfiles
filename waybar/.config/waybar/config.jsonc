@@ -94,8 +94,8 @@
             "󰂂",
             "󰁹"
         ],
-        "format": "{icon} {capacity}%",
-        "format-charging": "󰂄 {capacity}%",
+        "format": "{icon}\u2009{capacity}%",
+        "format-charging": "󰂄\u2009{capacity}%",
         "states": {
             "critical": 10
         }
