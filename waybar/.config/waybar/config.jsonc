@@ -1,7 +1,8 @@
 {
     "include": [
         "modules/backlight.jsonc",
-        "modules/battery.jsonc"
+        "modules/battery.jsonc",
+        "modules/pulseaudio.jsonc"
     ],
     "layer": "top",
     "modules-left": [
@@ -46,16 +47,5 @@
     },
     "memory": {
         "format": " {percentage}%"
-    },
-    "pulseaudio": {
-        "format-icons": {
-            "default": [
-                "",
-                ""
-            ]
-        },
-        "format": "{icon} {volume}%",
-        "format-muted": " {volume}%",
-        "on-click": "pavucontrol"
     }
 }
