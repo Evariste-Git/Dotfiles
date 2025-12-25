@@ -78,6 +78,12 @@ tooltip {
 #battery.critical {
     color: @red;
     border-color: @red;
+    background: @red_10;
+}
+#battery.charging {
+    color: @green;
+    border-color: @green;
+    background: @green_10;
 }
 
 /*
