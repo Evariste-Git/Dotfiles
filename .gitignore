@@ -1,4 +1,5 @@
 # colors
+backgrounds/.config/backgrounds/current.png
 colors/.theme/current/
 hypr/.config/hypr/current_theme.conf
 waybar/.config/waybar/current_theme.css
