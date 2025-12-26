@@ -14,6 +14,7 @@
         "clock"
     ],
     "modules-right": [
+        "network",
         "custom/theme",
         "pulseaudio",
         "backlight",
@@ -23,6 +24,10 @@
     ],
     "hyperland/window": {
         "max-length": 50
+    },
+    "network": {
+        "interface": "wlp2s0",
+        "format": " {essid}"
     },
     "hyprland/workspaces": {
         "format": "{icon} {windows}",
