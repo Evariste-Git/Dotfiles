@@ -6,3 +6,6 @@ echo "copying colors for hyprland"
 
 echo "reload hyprland"
 hyprctl reload
+
+echo "Reloading Hyprpaper"
+systemctl --user restart hyprpaper.service
