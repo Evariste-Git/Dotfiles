@@ -10,5 +10,6 @@ choice="$(printf "$THEMES" | wofi --dmenu --prompt 'select theme')"
 
 echo "$choice" > "$CURR_STATE"
 "$HOME/Dotfiles/colors/.theme/scripts/create_GTK.bash" "$choice"
+"$HOME/Dotfiles/colors/.theme/scripts/create_rasi.sh"
 "$HOME/Dotfiles/hypr/.config/hypr/scripts/reload.sh"
 "$HOME/Dotfiles/waybar/.config/waybar/scripts/launch.sh"
