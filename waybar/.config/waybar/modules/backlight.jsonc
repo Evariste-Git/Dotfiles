@@ -14,6 +14,7 @@
             "󰛨"
         ],
         // \u2002 is a four-per-em space in unicode
-        "format": "{icon}\u2002{percent}%"
+        "format": "{icon}\u2002{percent}%",
+        "tooltip": false
     }
 }
