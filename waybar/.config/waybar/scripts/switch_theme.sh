@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 set -euo pipefail
 
 THEMES="latte\nfrappe\nmacchiato\nmocha"
 CURR_STATE="$HOME/Dotfiles/colors/.theme/current/current"
 
-choice="$(printf "$THEMES" | wofi --dmenu --prompt 'select theme')"
+choice="$(printf "%b" "$THEMES" | rofi -dmenu -p 'select theme')"
 [ -z "$choice" ] && exit 0
 
 echo "$choice" > "$CURR_STATE"
