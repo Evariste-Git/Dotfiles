@@ -4,7 +4,6 @@
 /*
 *   General
 */
-
 * {
     font-family: "JetBrainsMono Nerd Font", sans-serif;
     font-weight: bold;
@@ -15,14 +14,14 @@
 *   Bar
 */
 window#waybar {
-    background-color: @base;
-    color: @lavender;
+    background-color: transparent;
+    color: @subtext1;
 }
 
 
 tooltip {
-    background-color: @base;
-    border: 2px solid @lavender;
+    background-color: @blue_10;
+    border: 2px solid @blue_20;
 }
 
 
@@ -30,10 +29,10 @@ tooltip {
 *   Hyperland workspaces
 */
 #workspaces button{
-    color: @overlay0;
+    color: @surface0;
 }
 #workspaces button.visible {
-    color: @lavender;
+    color: @surface2;
 }
 
 
@@ -50,8 +49,9 @@ tooltip {
 
 /* first the general apperance is defined, afterwards the individual settings */
 #backlight, #battery, #cpu, #custom-theme, #memory, #network, #pulseaudio {
-    background-color: @crust;
-    border: 2px solid @lavender;
+    color: @subtext0_80;
+    background-color: @mantle_80;
+    border: 2px solid @overlay0_80;
     border-radius: 5px;
     /* to adjust rounding 3px left and right, and no padding top bottom */
     padding: 0px 3px;
