@@ -15,3 +15,6 @@ You can (should) follow [this guide](https://wiki.archlinux.org/title/Installati
 ## 2. Download
 For this step you now defenetly need [git](https://wiki.archlinux.org/title/Git), so [install](https://wiki.archlinux.org/title/Help:Reading#Installation_of_packages) it by running
 ``sudo pacman -S git``
+
+# License
+The catppuccin color palettes are licensed under the MIT license, you can find the original project [here](https://github.com/catppuccin/catppuccin).
