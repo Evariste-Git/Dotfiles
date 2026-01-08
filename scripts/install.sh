@@ -12,10 +12,14 @@ install()
         echo "[+] $1 is installed"
     else
         echo "[-] $1 is not installed"
-        exit 1
+        echo "[*] installing $1"
+        sudo pacman -S $1
     fi
 }
 
+echo "+++ Upgrade System +++"
+sudo pacman -Syu
+
 echo "+++ Installing Dotfile Dependencies +++"
 install bash
-install hehehihi
+install fastfetch
