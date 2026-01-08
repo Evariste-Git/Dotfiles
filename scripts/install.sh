@@ -8,10 +8,10 @@ check_installed()
 install()
 {
     echo "[*] Check if $1 is installed"
-    if check_installed bash; then
-        echo "[+] bash is installed"
+    if check_installed $1; then
+        echo "[+] $1 is installed"
     else
-        echo "[-] bash is not installed"
+        echo "[-] $1 is not installed"
         exit 1
     fi
 }
