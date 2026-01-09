@@ -3,6 +3,13 @@
 PACKAGES="
 bash
 fastfetch
+hyprland
+hyprlock
+hyprpaper
+hyprsunset
+uwsm
+libnewt
+sddm
 "
 
 echo "+++ Upgrade System +++"
