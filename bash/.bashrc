@@ -18,6 +18,10 @@ fi
 alias ls='ls --almost-all --color=auto'
 alias grep='grep --color=auto'
 
+alias dots='cd $HOME/Dotfiles'
+
+alias nv='nvim'
+
 alias lg='lazygit'
 # unn is also git alias for status
 alias unn='git status'
