@@ -13,4 +13,4 @@ $HOME/Dotfiles/scripts/install.sh
 echo "+++ Begin Setup +++"
 
 echo "[*] enable sddm"
-sudo systemctl start sddm.service
+sudo systemctl enable sddm.service
