@@ -1,25 +1,12 @@
 #!/bin/sh
 
-check_installed()
-{
-    pacman -Q $1 >/dev/null 2>&1;
-}
-
-install()
-{
-    echo "[*] Check if $1 is installed"
-    if check_installed $1; then
-        echo "[+] $1 is installed"
-    else
-        echo "[-] $1 is not installed"
-        echo "[*] installing $1"
-        sudo pacman -S $1
-    fi
-}
+PACKAGES="
+bash
+fastfetch
+"
 
 echo "+++ Upgrade System +++"
 sudo pacman -Syu
 
-echo "+++ Installing Dotfile Dependencies +++"
-install bash
-install fastfetch
+echo "+++ Install Missing Dotfile Dependencies +++"
+sudo pacman -S --needed PACKAGES
