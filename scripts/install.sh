@@ -10,6 +10,7 @@ hyprsunset
 uwsm
 libnewt
 sddm
+kitty
 "
 
 echo "+++ Upgrade System +++"

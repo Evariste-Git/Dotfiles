@@ -1,11 +1,16 @@
 #!/bin/sh
 
-echo "running setup.sh"
-
-echo "check if bash is installed"
-if command -v bash >/dev/null 2>&1; then
-    echo "bash is installed"
+echo "[*] check for repository"
+if [ -d "$HOME/Dotfiles" ]; then
+    echo "[+] $HOME/Dotfiles exists"
 else
-    echo "bash is not installed"
+    echo "[-] $HOME/Dotfiles is missing"
     exit 1
 fi
+
+$HOME/Dotfiles/scripts/install.sh
+
+echo "+++ Begin Setup +++"
+
+echo "[*] enable sddm"
+systemctl start sddm.service
