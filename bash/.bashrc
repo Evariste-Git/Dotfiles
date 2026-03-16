@@ -2,8 +2,6 @@
 # ~/.bashrc
 #
 
-eval "$(starship init bash)"
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -35,3 +33,5 @@ eval "$(rbenv init -)"
 
 # start fastfetch on startup
 # fastfetch
+
+eval "$(starship init bash)"
