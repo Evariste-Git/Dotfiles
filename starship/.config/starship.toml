@@ -3,6 +3,7 @@
 
 format = """
 $status\
+$cmd_duration\
 [](fg:red bg:surface0)\
 $os\
 $username\
@@ -77,6 +78,11 @@ style = "fg:base bg:red"
 success_symbol = '0'
 # default value is true
 disabled = false
+
+[cmd_duration]
+min_time = 0
+format = '[ took $duration]($style)'
+style = "fg:base bg:red"
 
 [os]
 format = '[ $symbol]($style)'
