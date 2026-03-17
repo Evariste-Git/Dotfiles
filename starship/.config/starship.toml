@@ -23,6 +23,7 @@ $python\
 $docker_context\
 [](fg:blue)\
 $line_break\
+$battery\
 $character\
 """
 
