@@ -7,15 +7,14 @@
     ],
     "layer": "top",
     "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/submap"
+        "custom/theme",
+        "hyprland/workspaces"
     ],
     "modules-center": [
         "clock"
     ],
     "modules-right": [
         "network",
-        "custom/theme",
         "pulseaudio",
         "backlight",
         "memory",
