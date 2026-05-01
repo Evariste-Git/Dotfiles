@@ -7,6 +7,9 @@ vim.wo.relativenumber = true
 vim.wo.number = true
 vim.o.cursorline = true
 
+-- remove ~ displayed after the file
+vim.opt.fillchars = { eob = " " }
+
 vim.cmd("set expandtab")
 vim.cmd("set tabstop=4")
 vim.cmd("set softtabstop=4")
