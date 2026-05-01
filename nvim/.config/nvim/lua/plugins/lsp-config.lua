@@ -42,6 +42,9 @@ return {
 					vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
 					vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
 					vim.keymap.set({ "n", "v" }, "<C-a>", vim.lsp.buf.code_action, opts)
+					vim.keymap.set("n", "<leader>d", function()
+						vim.diagnostic.open_float(nil, { border = "rounded", source = "always" })
+					end, opts)
 				end,
 			})
 		end,
