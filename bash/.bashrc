@@ -26,6 +26,9 @@ alias unn='git status'
 alias gd='git diff'
 alias gc='git commit'
 
+# get scala into path
+export PATH=$PATH:/opt/scala/bin
+
 PS1='[\u@\h \W]\$ '
 
 export PATH="$HOME/.rbenv/bin:$PATH"
