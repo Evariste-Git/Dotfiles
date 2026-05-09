@@ -48,7 +48,7 @@ tooltip {
 */
 
 /* first the general apperance is defined, afterwards the individual settings */
-#backlight, #battery, #cpu, #custom-theme, #memory, #network, #pulseaudio, #workspaces {
+#backlight, #battery, #cpu, #custom-theme, #memory, #network, #pulseaudio, #temperature, #workspaces {
     color: @subtext0_80;
     background-color: @mantle_80;
     border: 2px solid @overlay0_80;

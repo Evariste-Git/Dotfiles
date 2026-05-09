@@ -3,6 +3,7 @@
         "modules/backlight.jsonc",
         "modules/battery.jsonc",
         "modules/pulseaudio.jsonc",
+        "modules/temperature.jsonc",
         "modules/theme.jsonc"
     ],
     "layer": "top",
@@ -19,6 +20,7 @@
         "backlight",
         "memory",
         "cpu",
+        "temperature",
         "battery"
     ],
     "hyperland/window": {
